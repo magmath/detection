@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HXR-Zy-f7N">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Register-->
+        <scene sceneID="KWC-cA-jJP">
+            <objects>
+                <viewController id="zv8-af-xMk" customClass="ViewController" customModule="Detection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nle-JO-DBQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="UqD-9N-bYy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hl6-Up-sIE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9zV-V7-vwf">
+                                <rect key="frame" x="20" y="49" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kku-Aw-4jn">
+                                <rect key="frame" x="20" y="20" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIM-c0-crS">
+                                <rect key="frame" x="20" y="87" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="register:" destination="zv8-af-xMk" eventType="touchUpInside" id="73A-7c-HRc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Register" image="registerBarItem" id="Gzh-nm-fOY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZn-T5-AS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2441" y="-2669"/>
+        </scene>
+        <!--Specials-->
+        <scene sceneID="bjW-9l-QMa">
+            <objects>
+                <viewController id="Ihv-fP-rb8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pc3-JS-agp"/>
+                        <viewControllerLayoutGuide type="bottom" id="YBR-gs-Gqn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZGu-9F-Gyl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.00046258820562516956" green="0.17038667838206101" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Specials" image="moneyBarItem" id="Bqt-B8-FhK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fle-tm-ciu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2441" y="-3411"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LnV-SG-JCP">
+            <objects>
+                <tabBarController id="HXR-Zy-f7N" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="vpN-h4-Wug">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ihv-fP-rb8" kind="relationship" relationship="viewControllers" id="NDR-Nn-Ggp"/>
+                        <segue destination="zv8-af-xMk" kind="relationship" relationship="viewControllers" id="U1j-UL-qLd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yot-Vv-afy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3437" y="-3161"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="moneyBarItem" width="25" height="25"/>
+        <image name="registerBarItem" width="25" height="25"/>
+    </resources>
+</document>
